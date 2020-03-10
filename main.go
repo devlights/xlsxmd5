@@ -43,7 +43,7 @@ func main() {
 func run() int {
 
 	flag.StringVar(&cmdArgs.directory, "d", ".", "対象ディレクトリ")
-	flag.StringVar(&cmdArgs.pattern, "p", "*.*", "対象ファイルパターン")
+	flag.StringVar(&cmdArgs.pattern, "p", ".*", "対象ファイルパターン")
 	flag.StringVar(&cmdArgs.output, "o", "", "出力ファイルパス")
 	flag.Parse()
 
